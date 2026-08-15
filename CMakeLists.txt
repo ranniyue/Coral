@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 set(CMAKE_C_COMPILER "/usr/bin/clang" CACHE FILEPATH "c compiler" FORCE)
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++" CACHE FILEPATH "c++ compiler" FORCE)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "Generate compile_commands.json for clangd")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -33,7 +34,6 @@ include(cmake/coral_options.cmake)
 add_subdirectory(coral)
 
 if(CORAL_BUILD_TESTS)
-  enable_testing()
   add_subdirectory(tests)
 endif()
 
