@@ -17,7 +17,7 @@ target_link_libraries(coral PUBLIC coral_options)
 # 单独配置
 target_compile_options(coral PRIVATE
   $<$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>>:
-    -Werrer # 将警告视为错误
+    -Werror # 将警告视为错误
   >
 )
 
