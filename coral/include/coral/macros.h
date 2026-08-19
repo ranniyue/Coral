@@ -1,5 +1,5 @@
-#ifndef CORAL_INCLUDE_CORAL_MACROS_H
-#define CORAL_INCLUDE_CORAL_MACROS_H
+#ifndef CORAL_INCLUDE_MACROS_H
+#define CORAL_INCLUDE_MACROS_H
 
 #include <cassert>
 #include <cstdint>
@@ -115,4 +115,4 @@ using s16 = int16_t;
 using s32 = int32_t;
 using s64 = int64_t;
 
-#endif  // !CORAL_INCLUDE_CORAL_MACROS_H
+#endif
